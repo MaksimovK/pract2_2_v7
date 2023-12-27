@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Поиск исполнителей</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title">«Исполнители»</string>
+    <string name="toscreen">Войти</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="add">  Поиск</string>
+    <string name="historylist">История поиска</string>
+    <string name="title_activity_add">Add</string>
+    <string name="title_activity_history_list">HistoryList</string>
+    <string name="poisk">Найти</string>
+</resources>

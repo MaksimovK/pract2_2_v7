@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_boxedEdges="all">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="17dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Логин"
+            android:textSize="12dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:textSize="12dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:text="@string/toscreen"
+            android:onClick="toScreen"
+            android:background="@color/gray"/>
+
+        </FrameLayout>
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>
